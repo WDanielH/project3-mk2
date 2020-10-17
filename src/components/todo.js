@@ -4,14 +4,14 @@
  import './todo.css';
 
  //============================
- function Task({ task, index, completeTask, RemoveTask }) {
+ function Task({ task, index, completeTask, removeTask }) {
     return (
         <div
             className="task"
             style={{ textDecoration: task.completed ? "line-through" : "" }}
         >
             {task.title}
-            <button style={{ background: "red"}} onClick={() => RemoveTask(index)}>X</button>
+            <button style={{ background: "red"}} onClick={() => removeTask(index)}>X</button>
             <button onClick={() => completeTask(index)}>Complete</button>
         </div>
     );
@@ -47,17 +47,26 @@
 function Todo() {
     const [tasks, setTasks] = useState([
         {
-            title: "Grab some Pizza",
+            title: "Get React to Work",
             completed: true
         },
         {
-            title: "Do your workout",
+            title: "Add Items",
             completed: true
         },
         {
-            title: "Hangout with friends",
+            title: "Complete Items",
+            completed: true
+        },
+        {
+            title: "Delete Items",
+            completed: true
+        },
+        {
+            title: "Filter View",
             completed: false
-        }
+        },
+
     ]);
 
     const addTask = title => {
@@ -71,6 +80,12 @@ function Todo() {
         setTasks(newTasks);
     };
 
+    const removeTask = index => {
+        const newTasks = [...tasks];
+        newTasks.splice(index, 1);
+        setTasks(newTasks);
+    };
+
     return (
         <div className="todo-container">
             <div className="header">TODO - ITEMS</div>
@@ -80,6 +95,7 @@ function Todo() {
                     task={task}
                     index={index}
                     completeTask={completeTask}
+                    removeTask={removeTask}
                     key={index}
                     />
                 ))}
