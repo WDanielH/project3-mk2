@@ -3,8 +3,9 @@ import AddTodo from "../containers/AddTodo";
 import TodoList from "../containers/TodoList";
 import Footer from "../containers/Footer";
 
+
 const App = () => (
-  <div>
+    <div>
     <AddTodo />
     <TodoList />
     <Footer />

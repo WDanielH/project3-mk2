@@ -11,10 +11,12 @@ const AddTodo = ({ dispatch }) => {
   };
   return (
     <React.Fragment>
+      <div classname="task button">
       <input type="text" ref={node => (input = node)} />
       <button type="submit" onClick={onClick}>
         Add Todo
       </button>
+      </div>
     </React.Fragment>
   );
 };

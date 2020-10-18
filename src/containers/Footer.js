@@ -3,7 +3,7 @@ import Link from "../components/Link";
 
 const Footer = () => {
   return (
-    <div>
+    <div classname="task button">
       <Link filter={"SHOW_ALL"}>All</Link>
       <Link filter={"SHOW_ACTIVE"}>Active</Link>
       <Link filter={"SHOW_COMPLETE"}>Complete</Link>

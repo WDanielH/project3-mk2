@@ -6,12 +6,17 @@ import { toggleTodo } from "../actions/todo.actions";
 
 const TodoList = ({ todos, toggleTodo }) => {
   return (
+    <div classname="todo-container">
+       
+    <div className="tasks">
     <ul>
       {todos != null &&
         todos.map(todo => (
           <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />
         ))}
     </ul>
+    </div>
+    </div>
   );
 };
 
