@@ -1,6 +1,6 @@
 import React, { findDOMNode, Component, PropTypes } from 'react';
 
-export default class createTask extends Component {
+export default class CreateTask extends Component {
   render() {
     return (
       <div>
@@ -20,6 +20,6 @@ export default class createTask extends Component {
   }
 }
 
-AddTodo.propTypes = {
+CreateTask.propTypes = {
   onAddClick: PropTypes.func.isRequired
 };
