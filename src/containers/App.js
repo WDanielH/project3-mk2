@@ -1,10 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { createTask, completeTask, setVisibilityFilter, VisibilityFilters } from '../actions';
+import { createTask, completeTask, removeTask, setVisibilityFilter, VisibilityFilters } from '../actions';
 import CreateTask from '../components/AddTodo';
 import TodoList from '../components/TodoList';
 import Footer from '../components/Footer';
 
+//possibly need to import removeTask
 
 class App extends Component {
   render() {
