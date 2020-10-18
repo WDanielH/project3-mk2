@@ -7,7 +7,7 @@ import "./Todo.css";
 
 const App = () => (
     <div classname="todo-container">
-      <h1>TODO LIST</h1>
+      
     <AddTodo />
     <TodoList />
     <Footer />

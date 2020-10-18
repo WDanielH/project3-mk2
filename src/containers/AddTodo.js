@@ -13,7 +13,7 @@ const AddTodo = ({ dispatch }) => {
   };
   return (
     <React.Fragment>
-      <div classname="task button">
+      <div>
       <input type="text" ref={node => (input = node)} />
       <button type="submit" onClick={onClick}>
         Add Todo

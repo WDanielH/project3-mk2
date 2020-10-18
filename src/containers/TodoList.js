@@ -10,6 +10,7 @@ const TodoList = ({ todos, toggleTodo }) => {
     <div classname="todo-container">
        
     <div className="tasks">
+    <h1>TODO LIST</h1>
     <ul>
       {todos != null &&
         todos.map(todo => (

@@ -2,30 +2,39 @@
  
 
  body {
-    background: rgb(255, 173, 65);
+    background: #39CCCC;
   }
 
   
-  .header {
-
-    margin: 0.5em;
+  h1 {
+    color:#39CCCC;
+    margin: 0.1em;
     font-size: 2em;
     text-align: center;
   }
-
+input{
+    font-size: 1.5em;
+    width: 40vw;
+    outline: none;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin: 10px;
+}
   .tasks {
+  
     font-size: 1.5em;
     width: 40vw;
     background: rgb(41, 33, 33);
-    border: 5px solid rgb(36,110,194);
-    color: white;
+    border: 5px solid  #8239cc;
+    color: #cca739;
     border-radius: 15px;
+    margin: 10px;
    
   }
 
   button{
     font-size: 1.5em;
-    background: rgb(12, 124, 251);
+    background: #cc5e39;
     border-radius: 15px;
     margin: 3px 5px;
     padding: 3px 5px;
