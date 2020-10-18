@@ -10,6 +10,7 @@
        style={{ textDecoration: complete ? "line-through" : "none" }}
      >
        {text}
+       <button>X</button>
      </li>
      
    );
