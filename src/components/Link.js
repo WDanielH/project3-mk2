@@ -5,7 +5,7 @@ import { filter } from "../actions/todo.actions";
 
 const Link = ({ active, children, onClick }) => {
   return (
-    <button onClick={onClick} disabled={active} style={{ marginLeft: "4px" }}>
+    <button class="linkBtn"onClick={onClick} disabled={active} style={{ marginLeft: "4px" }}>
       {children}
     </button>
   );

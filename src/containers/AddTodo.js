@@ -15,7 +15,7 @@ const AddTodo = ({ dispatch }) => {
     <React.Fragment>
       <div>
       <input type="text" ref={node => (input = node)} />
-      <button type="submit" onClick={onClick}>
+      <button id="addBtn" type="submit" onClick={onClick}>
         Add Todo
       </button>
       </div>
