@@ -1,7 +1,8 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component} from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createTask, completeTask, removeTask, setVisibilityFilter, VisibilityFilters } from '../actions';
-import CreateTask from '../components/AddTodo';
+import CreateTask from '../components/CreateTask';
 import TodoList from '../components/TodoList';
 import Footer from '../components/Footer';
 
