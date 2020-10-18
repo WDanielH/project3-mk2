@@ -3,10 +3,10 @@ import { createStore } from 'redux';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import './index.css';
-import Todo from "./components/todo";
+import Todo from "./components/Todo";
 import * as serviceWorker from './serviceWorker';
 import App from './containers/App';
-import todoApp from './reducers';
+import todoApp from './reducers/reducers';
 
 
 let store = createStore(todoApp);

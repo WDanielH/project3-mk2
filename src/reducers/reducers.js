@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { CREATE_TASK, COMPLETE_TASK, REMOVE_TASK, SET_VISIBILITY_FILTER, VisibilityFilters } from './actions';
+import { CREATE_TASK, COMPLETE_TASK, REMOVE_TASK, SET_VISIBILITY_FILTER, VisibilityFilters } from '../actions';
 const { SHOW_ALL } = VisibilityFilters;
 
 function visibilityFilter(state = SHOW_ALL, action) {
