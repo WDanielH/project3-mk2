@@ -1,3 +1,29 @@
+import React from "react";
+import { addTodo } from "../actions/todo.actions";
+import { connect } from "react-redux";
+
+const AddTodo = ({ dispatch }) => {
+  let input;
+  let onClick = (e) => {
+    if (input.value.trim() !== "") {
+      dispatch(addTodo(input.value.trim()));
+    }
+  };
+  return (
+    <React.Fragment>
+      <input type="text" ref={node => (input = node)} />
+      <button type="submit" onClick={onClick}>
+        Add Todo
+      </button>
+    </React.Fragment>
+  );
+};
+
+export default connect()(AddTodo);
+
+
+/*
+
 import React, { findDOMNode, Component} from 'react';
 import PropTypes from 'prop-types';
 
@@ -19,6 +45,8 @@ export default class CreateTask extends Component {
 CreateTask.propTypes = {
   onAddClick: PropTypes.func.isRequired
 };
+
+*/
 
 /* - snipped may not matter
 handleClick(e) {

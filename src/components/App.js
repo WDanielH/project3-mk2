@@ -1,10 +1,28 @@
+import React from "react";
+import AddTodo from "../containers/AddTodo";
+import TodoList from "../containers/TodoList";
+import Footer from "../containers/Footer";
+
+const App = () => (
+  <div>
+    <AddTodo />
+    <TodoList />
+    <Footer />
+  </div>
+);
+
+export default App;
+
+
+/*
+
 import React, { Component} from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { createTask, completeTask, removeTask, setVisibilityFilter, VisibilityFilters } from '../actions';
-import CreateTask from '../components/CreateTask';
-import TodoList from '../components/TodoList';
-import Footer from '../components/Footer';
+import { createTask, completeTask, removeTask, setVisibilityFilter, VisibilityFilters } from '../actions/todo.actions';
+import CreateTask from './CreateTask';
+import TodoList from './TodoList';
+import Footer from './Footer';
 
 //possibly need to import removeTask
 
@@ -67,3 +85,5 @@ function select(state) {
 
 // Wrap the component to inject dispatch and state into it
 export default connect(select)(App);
+
+*/
