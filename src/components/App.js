@@ -2,10 +2,12 @@ import React from "react";
 import AddTodo from "../containers/AddTodo";
 import TodoList from "../containers/TodoList";
 import Footer from "../containers/Footer";
+import "./Todo.css";
 
 
 const App = () => (
-    <div>
+    <div classname="todo-container">
+      <h1>TODO LIST</h1>
     <AddTodo />
     <TodoList />
     <Footer />
