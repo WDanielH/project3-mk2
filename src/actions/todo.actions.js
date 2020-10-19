@@ -26,11 +26,12 @@ export const typeFilter = {
 
 export const deleteTodo = index =>({
   type: "DELETE_TODO",
-  index:index
+  index:index,
+ id:  nextTodoId--
 });
 
 
-
+//test
 /*
 //action types
 
