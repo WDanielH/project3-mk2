@@ -24,10 +24,10 @@ export const typeFilter = {
   SHOW_ALL: "SHOW_ALL"
 };
 
-export const deleteTodo = key =>({
+export const deleteTodo = index =>({
   type: "DELETE_TODO",
-  payload: key
-})
+  index:index
+});
 
 
 

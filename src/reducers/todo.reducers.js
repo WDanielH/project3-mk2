@@ -1,4 +1,8 @@
+
+
 const todos = (state = [], action) => {
+  
+  
   switch (action.type) {
     case "ADD_TODO":
       return [
@@ -9,12 +13,12 @@ const todos = (state = [], action) => {
           text: action.text
         }
       ];
-      
+
       case "DELETE_TODO":
-      return {
-        ...state,
-        todos: state.todos.filter((todo, i) => i !== action.payload)
-      };
+        return [
+          ...state.slice(0, action.index),
+          ...state.slice(action.index + 1)
+        ];
 
     case "TOGGLE_TODO":
       return state.map(
@@ -26,3 +30,13 @@ const todos = (state = [], action) => {
   }
 };
 export default todos;
+
+
+/*
+ case "DELETE_TODO":
+      return {
+        ...state,
+        todos: state.todos.filter((data, i) => i !== action.payload)
+      };
+
+*/
