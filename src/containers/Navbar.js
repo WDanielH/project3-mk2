@@ -5,7 +5,7 @@ import '../components/Todo.css';
 const Navbar = () => {
   return (
     <div className="navbar">
-      <a className="navlink">ToDo List</a>
+      <a href="" className="navlink">ToDo List</a>
       <a className="navlink">Contact Us</a>
     </div>
   );
