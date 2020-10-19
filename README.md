@@ -1,3 +1,57 @@
+
+Wow - this project is tough!
+
+I'm not honestly real thrilled with where we are at 11:05 the day it is due. I'd call this a pre-alpha build of my ideal submission.
+
+What the app is supposed to do:
+
+Page 1 - Todo App - using react/redux have make a basic to do app with the following functions:
+1) add to do
+2) complete to do
+3) delete to do
+4) filter view of to dos.
+
+--- That all actually works!
+
+There is a bug with the delete todos that needs to be squashed, if you ever delete a task that has a task beneath it, the key can get messed up and you can end up with delete not working. Thats a bug I'd like to fix.
+
+Other than that for the actual to-do functions I'm OK. I'd like to:
+
+Clear out the text so you dont have to delete it to add a new task. - that should be easy
+-
+Investigate allowing for editing todos
+-
+investigate allowing you to reorder your todos or assign priorities.
+-
+consider implementing a work in progress state. I think that would be fairly easy as well
+
+-----------------------
+
+Page 2 a contact form 
+
+To be honest I got a little thrown by this one, I spent a fair bit of time figuring it out in redux and then realized it wasn't supposed to be in redux.
+-
+I believe the code I have works but I've run out of time to get it implemented before submission.
+
+-----------------------
+
+Nav Bar with React Router -- 
+
+I have a dummy navbar, I need to go in and at minimum get the actual links working. I'll probably look at redux bootstrap to do a much better version of it.
+
+-----------------
+
+My code is messier than I would like.
+
+I realized I spent way too much time practicing react in code pen and code sandbox and when it came time to set up locally I ran into a lot of issues. I watched a ton of videos and read many references but a lot of them used depreciated items in their code which made this something of an adventure.
+
+My project organization isnt nearly as clean as I want it to be and I think in general a lot of this code could be rewritten to be of higher quality.
+
+
+See below for how to get everything running. Fair warning there were some issues with react terms flagging as unused and preventing the npm start - this seems to be a react/redux issue and thankfully solutions were only a google away.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
