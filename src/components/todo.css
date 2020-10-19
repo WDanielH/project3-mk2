@@ -33,6 +33,22 @@ input{
    
   }
 
+
+  .navbar{
+    background-color: #8239cc;
+    border: 5px solid black;
+  }
+
+  .navlink{
+    Font-size: 1.5em;
+    font-weight: bold;
+    color: #39cccc;
+    margin: 3px 30px 3px 10px;
+    padding: 3px 5px;
+  }
+
+ 
+
   .linkBtn, #addBtn{
     font-size: 1.5em;
     background: #cc5e39;
@@ -45,6 +61,8 @@ input{
     float: none;
     
   }
+
+  
 
  button {
     font-size: .75em;
