@@ -1,7 +1,7 @@
  // Todo.js
 
  import React from "react";
-
+// ok trying to add delete
  const Todo = ({ text, complete, onClick }) => {
    return (
     
