@@ -24,7 +24,10 @@ export const typeFilter = {
   SHOW_ALL: "SHOW_ALL"
 };
 
-
+export const deleteTodo = key =>({
+  type: "DELETE_TODO",
+  payload: key
+})
 
 
 

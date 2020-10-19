@@ -14,7 +14,7 @@ const TodoList = ({ todos, toggleTodo }) => {
     <ul>
       {todos != null &&
         todos.map(todo => (
-          <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />
+          <Todo key={todo.id} {...todo} idx= {todo.id} onClick={() => toggleTodo(todo.id)} />
         ))}
     </ul>
     </div>

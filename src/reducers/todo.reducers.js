@@ -9,6 +9,13 @@ const todos = (state = [], action) => {
           text: action.text
         }
       ];
+      
+      case "DELETE_TODO":
+      return {
+        ...state,
+        todos: state.todos.filter((todo, i) => i !== action.payload)
+      };
+
     case "TOGGLE_TODO":
       return state.map(
         todo =>
