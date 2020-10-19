@@ -31,13 +31,3 @@ const todos = (state = [], action) => {
 };
 export default todos;
 
-//test
-
-/*
- case "DELETE_TODO":
-      return {
-        ...state,
-        todos: state.todos.filter((data, i) => i !== action.payload)
-      };
-
-*/

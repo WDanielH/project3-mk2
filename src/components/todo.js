@@ -5,8 +5,7 @@
  import {deleteTodo} from "../actions/todo.actions";
 
  
-// ok trying to add delete
-
+// the deleteTodo(idx) is a holdover from an earlier attempt -- clean it up
 
  const Todo = ({ text, idx, deleteTodo, complete, onClick }) => {
    return (
@@ -30,8 +29,3 @@
  })
  export default connect(null, mapDispatchToProps)(Todo);
  
- /*
-<button id="addBtn" type="submit" onClick={onClick}>
-        Add Todo
-      </button>
- */
