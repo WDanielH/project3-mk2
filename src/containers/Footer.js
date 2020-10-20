@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "../components/Link";
-import '../components/Todo.css';
+//import '../components/Todo.css';
 
 const Footer = () => {
   return (
