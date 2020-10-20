@@ -1,4 +1,22 @@
 
+
+
+Monday Night Update (Original Sunday Night Notes Below)
+
+Ok the app is done! I still have lots of areas I would like to polish and I can see a half dozen improvements I could make in the functionality of the todos.
+
+Todo App - functional with one known bug (see below)
+Nav Bar - Using React Router - Functional 
+Contact - Using React -- Functional but not hooked to anything
+
+From here I intend to
+1) Resolve the delete bug
+2) implement other todo functionality to make the app less a rough prototype and more robust
+3) I can easily attach the contact form like I did ine project one to actually send an email.
+4) My code is still messier than I'd like -- I know I can improve on it.
+
+
+Sunday
 Wow - this project is tough!
 
 I'm not honestly real thrilled with where we are at 11:05 the day it is due. I'd call this a pre-alpha build of my ideal submission.
