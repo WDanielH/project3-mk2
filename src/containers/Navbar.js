@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <a href="/" className="navlink">ToDo List</a>
-      <a href="/about" className="navlink">Contact Us</a>
+      <a href="/contact" className="navlink">Contact Us</a>
     </div>
   );
 };

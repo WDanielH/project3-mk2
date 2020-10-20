@@ -18,7 +18,7 @@ const store = createStore(rootReducer);
 ReactDOM.render(
   <Provider store={store}>
     <Navbar /> 
-    <Router>
+      <Router>
       <Route exact path="/" component={App} />
       <Route path="/contact" component={ContactApp} />
     </Router>
